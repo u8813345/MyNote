@@ -44,7 +44,8 @@ sudo apt-get install -y curl
 #DONT DO following
 ###########curl sL https://deb.nodesource.com/setup_10.x | sudo bash -
 
-#sudo apt-get install -y nodejs
+curl sL https://deb.nodesource.com/setup_10.x | sudo bash -
+sudo apt-get install -y nodejs
 
 #FIX  npm : Depends: node-gyp (>= 0.10.9) but it is not going to be installed
 #sudo apt-get install nodejs-dev node-gyp libssl1.0-dev
@@ -66,11 +67,18 @@ sudo apt-get install -y git-lfs
 
 sudo apt-get install -y python-pip
 sudo python2 -m pip install gitpython
+sudo python2 -m pip install numpy
+sudo python2 -m pip install --upgrade pip
+sudo python2 -m pip install configParser
 
 sudo apt-get install -y python3-pip
 sudo python3 -m pip install gitpython
+sudo python3 -m pip install numpy
+sudo python3 -m pip install --upgrade pip
+sudo python3 -m pip install configParser
 
-pip install sentry_sdk
+sudo pip install sentry_sdk
+sudo pip3 install sentry_sdk
 
 
 #NEED when build libluaturbo-src
