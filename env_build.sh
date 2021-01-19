@@ -1,24 +1,29 @@
 #!/bin/bash
-#sudo apt-get update
+sudo apt-get update
 
-#sudo apt-get -y install aptitude apt-offline dmidecode openssh-server vim build-essential automake make checkinstall dpatch patchutils autotools-dev debhelper quilt fakeroot xutils lintian cmake dh-make libtool autoconf git-core git-svn tree rar p7zip-full p7zip-rar unace unp keychain expect
+sudo apt-get -y install aptitude apt-offline dmidecode openssh-server vim build-essential automake make checkinstall dpatch patchutils autotools-dev debhelper quilt fakeroot xutils lintian cmake dh-make libtool autoconf git-core git-svn tree rar p7zip-full p7zip-rar unace unp keychain expect
 
-#sudo apt-get -y install openjdk-8-jdk
-#sudo update-alternatives --config javac
-#sudo update-alternatives --config java
+sudo apt-get -y install openjdk-8-jdk
+sudo update-alternatives --config javac
+sudo update-alternatives --config java
 
-#sudo apt install -y libcanberra-gtk-module
+sudo apt install -y libcanberra-gtk-module
 
 #sudo apt-get install -y gcc-multilib mtd-utils:i386 subversion patch patchutils bison libc6-dev libxml-dom-perl zlib1g zlib1g-dev libcurl4-openssl-dev libncurses5:i386 python-numpy doxygen python-apt dmsetup python-svn libpcre3-dev netpbm sqlite3 gawk graphviz u-boot-tools automake pkg-config libc6-armel-cross libc6-dev-armel-cross binutils-arm-linux-gnueabi libncurses5-dev
+#sudo apt-get install -y subversion patch patchutils bison libc6-dev libxml-dom-perl zlib1g zlib1g-dev libcurl4-openssl-dev libncurses5:i386 python-numpy doxygen python-apt dmsetup python-svn libpcre3-dev netpbm sqlite3 gawk graphviz u-boot-tools automake pkg-config libc6-armel-cross libc6-dev-armel-cross binutils-arm-linux-gnueabi libncurses5-dev
+sudo apt-get install -y subversion patch patchutils bison libc6-dev libxml-dom-perl zlib1g zlib1g-dev libcurl4-openssl-dev python-numpy doxygen python-apt dmsetup python-svn libpcre3-dev netpbm sqlite3 gawk graphviz u-boot-tools automake pkg-config libc6-armel-cross libc6-dev-armel-cross binutils-arm-linux-gnueabi libncurses5-dev gcc-arm-linux-gnueabi g++-arm-linux-gnueabi flex lzop libssl-dev zlib1g-dev
+
+
+
 #sudo apt-get install -y gcc-arm-linux-gnueabi g++-arm-linux-gnueabi
 
-#sudo apt-get install -y php-cli
+sudo apt-get install -y php-cli
 
 #NOT IN MDS installation guide
-#sudo apt install python-pip
+sudo apt install python-pip
 
-#pip install setuptools
-#sudo apt-get -y install squashfs-tools
+pip install setuptools
+sudo apt-get -y install squashfs-tools
 #sudo apt-get -y install flex
 
 #MUST VERSION 2.0.5
@@ -34,7 +39,7 @@ rm LuaJIT-2.0.5.tar.gz
 
 
 
-#sudo apt-get install -y curl
+sudo apt-get install -y curl
 
 #DONT DO following
 ###########curl sL https://deb.nodesource.com/setup_10.x | sudo bash -
