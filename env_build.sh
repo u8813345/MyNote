@@ -1,5 +1,8 @@
 #!/bin/bash
 #sudo apt-get update
+
+#sudo apt-get -y install aptitude apt-offline dmidecode openssh-server vim build-essential automake make checkinstall dpatch patchutils autotools-dev debhelper quilt fakeroot xutils lintian cmake dh-make libtool autoconf git-core git-svn tree rar p7zip-full p7zip-rar unace unp keychain expect
+
 #sudo apt-get -y install openjdk-8-jdk
 #sudo update-alternatives --config javac
 #sudo update-alternatives --config java
