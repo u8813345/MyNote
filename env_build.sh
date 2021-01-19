@@ -77,8 +77,8 @@ sudo python3 -m pip install numpy
 sudo python3 -m pip install --upgrade pip
 sudo python3 -m pip install configParser
 
-sudo pip install sentry_sdk
-sudo pip3 install sentry_sdk
+sudo python2 -m pip install sentry_sdk
+sudo python3 -m pip install sentry_sdk
 
 
 #NEED when build libluaturbo-src
