@@ -108,6 +108,12 @@ sudo apt-get install -y tftpd-hpa
 sudo apt-get install -y minicom
 sudo apt-get install -y tasksel
 sudo tasksel install samba-server
+#[root]
+#   path = /home
+#   browseable = yes
+#   read only = no
+#   valid users = root colin
+
 sudo tasksel install openssh-server
 sudo apt-get install -y ipmitool
 sudo pip3 install redfishtool
