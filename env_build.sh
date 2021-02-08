@@ -1,4 +1,6 @@
 #!/bin/bash
+# 這是我裝在 ubuntu 18.04 + mXs 13.1 所執行的指令
+#
 sudo apt-get update
 
 sudo apt-get -y install aptitude apt-offline dmidecode openssh-server vim build-essential automake make checkinstall dpatch patchutils autotools-dev debhelper quilt fakeroot xutils lintian cmake dh-make libtool autoconf git-core git-svn tree rar p7zip-full p7zip-rar unace unp keychain expect
