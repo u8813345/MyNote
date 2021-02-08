@@ -91,3 +91,28 @@ fn_set_timezone()
     sudo timedatectl set-timezone $CFG_TIMEZONE
     timedatectl
 }
+
+fn_install_ipmitool()
+{
+    fn_echo_process "Install ipmitool"
+    sudo apt -y install dmidecode
+	sudo apt -y install ipmitool
+	[ $? -ne 0 ] && fn_error_happen "fn_install_ipmitool"
+	dmidecode | grep "DMI type 38"
+	if [ $? == 0 ]; then
+        sudo modprobe ipmi_devintf
+        sudo modprobe ipmi_si
+        cat /etc/modules | grep ipmi_devintf
+        if [ $? != 0 ]; then
+            sudo bash -c 'echo "ipmi_devintf" >> /etc/modules'
+        fi
+        
+        cat /etc/modules | grep ipmi_si
+        if [ $? != 0 ]; then
+            sudo bash -c 'echo "ipmi_si" >> /etc/modules'
+        fi
+    fi
+}
+
+
+
