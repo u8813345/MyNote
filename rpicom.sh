@@ -74,6 +74,7 @@ fn_enable_tftp_server()
         echo "******** tftp folder $CFG_TFTP_ROOT ********"
         sudo mkdir $CFG_TFTP_ROOT
         sudo chown -R nobody:nogroup $CFG_TFTP_ROOT
+	sudo chmod -R 2777  $CFG_TFTP_ROOT
         sudo bash -c 'echo "# /etc/default/tftpd-hpa" > /etc/default/tftpd-hpa'
         sudo bash -c 'echo "" >> /etc/default/tftpd-hpa'
         sudo bash -c 'echo "TFTP_USERNAME=\"tftp\"" >> /etc/default/tftpd-hpa'
