@@ -11,10 +11,16 @@ sudo update-alternatives --config java
 
 sudo apt install -y libcanberra-gtk-module
 
-#sudo apt-get install -y gcc-multilib mtd-utils:i386 subversion patch patchutils bison libc6-dev libxml-dom-perl zlib1g zlib1g-dev libcurl4-openssl-dev libncurses5:i386 python-numpy doxygen python-apt dmsetup python-svn libpcre3-dev netpbm sqlite3 gawk graphviz u-boot-tools automake pkg-config libc6-armel-cross libc6-dev-armel-cross binutils-arm-linux-gnueabi libncurses5-dev
-#sudo apt-get install -y subversion patch patchutils bison libc6-dev libxml-dom-perl zlib1g zlib1g-dev libcurl4-openssl-dev libncurses5:i386 python-numpy doxygen python-apt dmsetup python-svn libpcre3-dev netpbm sqlite3 gawk graphviz u-boot-tools automake pkg-config libc6-armel-cross libc6-dev-armel-cross binutils-arm-linux-gnueabi libncurses5-dev
-sudo apt-get install -y subversion patch patchutils bison libc6-dev libxml-dom-perl zlib1g zlib1g-dev libcurl4-openssl-dev python-numpy doxygen python-apt dmsetup python-svn libpcre3-dev                   netpbm sqlite3 gawk graphviz u-boot-tools automake pkg-config libc6-armel-cross libc6-dev-armel-cross binutils-arm-linux-gnueabi libncurses5-dev gcc-arm-linux-gnueabi g++-arm-linux-gnueabi flex lzop libssl-dev
-#sudo apt-get install -y subversion patch patchutils bison libc6-dev libxml-dom-perl zlib1g zlib1g-dev libcurl4-openssl-dev python-numpy doxygen python-apt dmsetup            libpcre3-dev python-subversion netpbm sqlite3 gawk graphviz u-boot-tools automake pkg-config libc6-armel-cross libc6-dev-armel-cross binutils-arm-linux-gnueabi libncurses5-dev gcc-arm-linux-gnueabi g++-arm-linux-gnueabi flex lzop libssl-dev rename
+sudo apt-get install -y subversion patch patchutils bison libc6-dev libxml-dom-perl zlib1g zlib1g-dev libcurl4-openssl-dev python-numpy doxygen python-apt dmsetup python-svn libpcre3-dev                   netpbm sqlite3 gawk graphviz u-boot-tools automake pkg-config libc6-armel-cross libc6-dev-armel-cross binutils-arm-linux-gnueabi libncurses5-dev gcc-arm-linux-gnueabi g++-arm-linux-gnueabi flex lzop libssl-dev rename
+
+sudo dpkg --add-architecture i386
+sudo apt-update update
+sudo apt-get install libc6:i386
+sudo apt-get install libncurses5:i386
+sudo apt-get install libstdc++6:i386
+sudo apt-get install lib32z1
+sudo apt-get install zlib1g-dev:i386
+
 
 
 #sudo apt-get install -y gcc-arm-linux-gnueabi g++-arm-linux-gnueabi
