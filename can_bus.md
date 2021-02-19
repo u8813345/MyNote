@@ -30,3 +30,5 @@ In CAN FD,
 * TCAN4550EVM <-> 開發板 接 SPI2 cs0
 * GPIOX6 <-> nINT
 * GPIOG6 <-> RST (reset)
+* https://developer.ridgerun.com/wiki/index.php/How_to_configure_and_use_CAN_bus
+* [device tree bonding for tcan4x5x](https://www.kernel.org/doc/Documentation/devicetree/bindings/net/can/tcan4x5x.txt) 
