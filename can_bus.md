@@ -24,5 +24,6 @@ In CAN FD,
 # MCP2515
 * 好像不支援 CAN FD
 * https://www.electronicshub.org/arduino-mcp2515-can-bus-tutorial/
+* https://circuitdigest.com/microcontroller-projects/arduino-can-tutorial-interfacing-mcp2515-can-bus-module-with-arduino
 
 # TCAN4550
