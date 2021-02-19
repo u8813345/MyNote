@@ -27,3 +27,6 @@ In CAN FD,
 * https://circuitdigest.com/microcontroller-projects/arduino-can-tutorial-interfacing-mcp2515-can-bus-module-with-arduino
 
 # TCAN4550
+* TCAN4550EVM <-> 開發板 接 SPI2 cs0
+* GPIOX6 <-> nINT
+* GPIOG6 <-> RST (reset)
