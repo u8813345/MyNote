@@ -28,6 +28,11 @@ In CAN FD,
 
 # TCAN4550
 * TCAN4550EVM <-> 開發板 接 SPI2 cs0
+ * 開發板 CS0 上面 已經有 flash, 所以只能 接 CS1
+ * J137 (SPICSA#)  1<->2    =>  15<->16
+ * J133 (SPICKA)   1<->2    =>  5<->6
+ * J134 (SPIMOSIA) 1<->2    =>  5<->6
+ * J135 (SPIMISOA) 1<->2    =>  5<->6
 * GPIOX6 <-> nINT
 * GPIOG6 <-> RST (reset)
 * https://developer.ridgerun.com/wiki/index.php/How_to_configure_and_use_CAN_bus
