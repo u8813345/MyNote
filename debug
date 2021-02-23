@@ -15,3 +15,10 @@ $ dhcp; setenv serverip 192.168.1.102; tftp 0x82000000 colin/rom.ima ; protect o
 U-Boot 2019.04:
 $ dhcp; setenv serverip 192.168.1.102; tftp 0x83000000 colin/rom.ima ;
 $ sf probe 0; sf protect unlock 0 0x4000000; sf update 0x83000000 0 0x4000000
+
+
+
+#uboot
+## read memory (SCU)
+### 
+$ md.l 0x1e6e200 0xc0
