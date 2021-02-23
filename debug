@@ -27,9 +27,13 @@ $ md.l 0x1e6e2000 0x200
 
 #Git command 
 
+## 暫存
 $ git stash
 $ git stash pop
 
 
+## how to generate a `git patch` for a specific commit
+$ git format-patch -1 <sha1>
+$ git apply <patch file>
 
 
