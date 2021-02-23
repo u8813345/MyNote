@@ -22,3 +22,14 @@ $ sf probe 0; sf protect unlock 0 0x4000000; sf update 0x83000000 0 0x4000000
 ## read memory (SCU)
 ### read MCU muti function pin control
 $ md.l 0x1e6e2000 0x200
+
+
+
+#Git command 
+
+$ git stash
+$ git stash pop
+
+
+
+
