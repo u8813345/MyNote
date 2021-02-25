@@ -36,4 +36,7 @@ $ git stash pop
 $ git format-patch -1 <sha1>
 $ git apply <patch file>
 
-
+$ git apply <patch file> --reject
+$ git status
+$ git add FIXED_FILES
+$ git am --resolved
