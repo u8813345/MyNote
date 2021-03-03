@@ -37,7 +37,7 @@ $ git stash
 $ git stash pop
 ```
 
-### how to generate a `git patch` for a specific commit
+### How to generate a `git patch` for a specific commit
 ```
 $ git format-patch -1 <sha1>
 $ git apply <patch file>
