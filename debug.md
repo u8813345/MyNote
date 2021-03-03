@@ -49,3 +49,19 @@ $ git status
 $ git add FIXED_FILES
 $ git am --resolved
 ```
+
+
+
+## How to compact vdi file
+
+### Guset OS (ubuntu)
+```
+$sudo su
+$umount /home/colin/eerai
+$zerofree -v /dev/sde1
+$poweroff
+```
+### Host OS (win10)
+```"
+c:\Program Files\Oracle\VirtualBox\VBoxManage.exe"  modifymedium --compact "C:\Users\colin.huang\VirtualBox VMs\zBMC\eera1.vdi"
+```
