@@ -65,3 +65,10 @@ $poweroff
 ```"
 c:\Program Files\Oracle\VirtualBox\VBoxManage.exe"  modifymedium --compact "C:\Users\colin.huang\VirtualBox VMs\zBMC\eera1.vdi"
 ```
+
+### How to change the disk lable name in linux
+```
+$ sudo e2label /dev/device
+$ sudo e2label /dev/device new-label-name-here
+```
+refer to: [here](https://www.cyberciti.biz/faq/linux-modify-partition-labels-command-to-change-diskname/)
