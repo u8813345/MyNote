@@ -40,3 +40,4 @@ In CAN FD,
 * https://developer.ridgerun.com/wiki/index.php/How_to_configure_and_use_CAN_bus
 * [device tree bonding for tcan4x5x](https://www.kernel.org/doc/Documentation/devicetree/bindings/net/can/tcan4x5x.txt) 
 * [hw connnecting](https://e2e.ti.com/support/interface/f/138/t/870334?TCAN4550EVM-How-to-configure-the-controller-mode-)
+* [linux的socketcan程式設計](https://www.itread01.com/content/1545305421.html)
