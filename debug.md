@@ -74,3 +74,11 @@ $ sudo e2label /dev/device
 $ sudo e2label /dev/device new-label-name-here
 ```
 refer to: [here](https://www.cyberciti.biz/faq/linux-modify-partition-labels-command-to-change-diskname/)
+
+
+### How to buid spedev_text tool under kernel tool folder
+```
+$PATH=/home/xyz/spx/workspace/XXXX_workspace/tools/arm-soft-linux-gnueabi/bin:$PATH
+$make ARCH=arm CROSS_COMPILE=arm-soft-linux-gnueabi- tools/spi
+
+```
