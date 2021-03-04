@@ -27,6 +27,8 @@ In CAN FD,
 * https://circuitdigest.com/microcontroller-projects/arduino-can-tutorial-interfacing-mcp2515-can-bus-module-with-arduino
 
 # TCAN4550
+* TCAN4550EVM is powered by a DC 12V through J8(->VSUP)
+* VIO SELECT(S1) is chosen to be in 3.3V output.
 * TCAN4550EVM <-> 開發板 接 SPI2 cs0
  * 開發板 CS0 上面 已經有 flash, 所以只能 接 CS1
  * J137 (SPICSA#)  1<->2    =>  15<->16
