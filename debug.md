@@ -68,7 +68,7 @@ $poweroff
 c:\Program Files\Oracle\VirtualBox\VBoxManage.exe"  modifymedium --compact "C:\Users\colin.huang\VirtualBox VMs\zBMC\eera1.vdi"
 ```
 
-### How to change the disk lable name in linux
+## How to change the disk lable name in linux
 ```
 $ sudo e2label /dev/device
 $ sudo e2label /dev/device new-label-name-here
@@ -76,7 +76,23 @@ $ sudo e2label /dev/device new-label-name-here
 refer to: [here](https://www.cyberciti.biz/faq/linux-modify-partition-labels-command-to-change-diskname/)
 
 
-### How to buid spedev_text tool under kernel tool folder
+## How to add the second hdd image for vbox.
+```
+$ sudo gparted
+1. select your disk  (my case /dev/sdj)
+2. Device -> Create Partation Table
+    msdos or gpt  (i use gpt)
+4. Partition -> New
+    Lebel : <file name of vdi>
+5. click apply all
+6. close window
+$ sudo blkid
+$ sudo vim /etc/fstab
+
+```
+
+
+## How to buid spedev_text tool under kernel tool folder
 ```
 $PATH=/home/xyz/spx/workspace/XXXX_workspace/tools/arm-soft-linux-gnueabi/bin:$PATH
 $make ARCH=arm CROSS_COMPILE=arm-soft-linux-gnueabi- tools/spi
