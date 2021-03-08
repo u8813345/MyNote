@@ -88,7 +88,8 @@ $ sudo gparted
 6. close window
 $ sudo blkid
 $ sudo vim /etc/fstab
-
+reboot
+$ sudo chown -R colin:colin /home/colin/<mount point>
 ```
 
 
