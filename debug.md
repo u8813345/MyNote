@@ -14,16 +14,20 @@
 
 ```
 U-Boot 2013.07:
-$ dhcp; setenv serverip 10.46.1.120; tftp 0x82000000 colin/rom.ima ; protect off all; erase bank 1; cp.b 0x82000000 0x20000000 4000000
+ dhcp; setenv serverip 10.46.1.120; tftp 0x82000000 colin/rom.ima ; protect off all; erase bank 1; cp.b 0x82000000 0x20000000 4000000
+
+
 U-Boot 2019.04:
-$ setenv colin "dhcp; setenv serverip 10.46.1.120; tftp 0x83000000 colin/rom.ima"
-$ setenv colin1 "sf probe 0; sf protect unlock 0 0x4000000; sf update 0x83000000 0 0x4000000"
-$ save
-$ run colin colin1; save
+ setenv colin "dhcp; setenv serverip 10.46.1.120; tftp 0x83000000 colin/rom.ima"
+ setenv colin1 "sf probe 0; sf protect unlock 0 0x4000000; sf update 0x83000000 0 0x4000000"
+ save
+ run colin colin1; saveenv
+
+
 U-Boot aspeed_bsp(06.01):
-$ setenv colin "setenv serverip 10.46.1.120; setenv bootfile colin/rom.ima; dhcp "
-$ setenv colin1 "sf probe 0; sf protect unlock 0 0x4000000; sf update 0x83000000 0 0x1000000"
-$ run colin colin1
+  setenv colin "setenv serverip 10.46.1.120; setenv bootfile colin/rom.ima; dhcp "
+  setenv colin1 "sf probe 0; sf protect unlock 0 0x4000000; sf update 0x83000000 0 0x1000000"
+  run colin colin1 ; saveenv
 ```
 
 
